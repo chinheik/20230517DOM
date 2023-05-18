@@ -1109,6 +1109,7 @@ function restart() {
   hangman_img_holder.setAttribute("src", imgsrclist[img_index]);
   document.getElementById("demo").innerHTML = "";
   clearAll();
+    document.getElementById("answer").innerHTML = "Level " + level;
   document.body.style.backgroundColor = "lightblue";
 
   if (level == 1) {
