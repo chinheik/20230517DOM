@@ -1109,6 +1109,7 @@ function restart() {
   hangman_img_holder.setAttribute("src", imgsrclist[img_index]);
   document.getElementById("demo").innerHTML = "";
   clearAll();
+  document.body.style.backgroundColor = "lightblue";
 
   if (level == 1) {
     levelOne();
@@ -1143,6 +1144,7 @@ document.getElementById("clickme").addEventListener("click", function () {
     if (img_index > 5) {
       document.getElementById("demo").innerHTML =
         "Gameover. The answer is " + ans + ". ";
+document.body.style.backgroundColor = "red";
       hangman_img_holder.setAttribute("src", imgsrclist[6]);
     } else {
       for (var i = 0; i < ans.length; i++) {
